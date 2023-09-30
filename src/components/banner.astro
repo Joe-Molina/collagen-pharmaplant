@@ -7,7 +7,7 @@ import DIC from "../jsons/DIC.json";
     DIC.map((dic) => (
       <article class="article">
         <img src={`./images/${dic.img}`} alt="" class="img" />
-        <div class="div">
+        <div class="div2">
           <h2 class="h2">{dic.title}</h2>
           <p class="p">{dic.content}</p>
         </div>
@@ -19,7 +19,7 @@ import DIC from "../jsons/DIC.json";
 <style>
   section {
     width: 100%;
-    background-image: url("./images/banner2.png");
+    background-image: url("../images/banner2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@ import DIC from "../jsons/DIC.json";
       margin-right: 10px;
     }
 
-    .div {
+    .div2 {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -72,7 +72,7 @@ import DIC from "../jsons/DIC.json";
           height: 100px;
         }
 
-        .div {
+        .div2 {
           width: 100%;
           justify-content: center;
           align-items: center;
