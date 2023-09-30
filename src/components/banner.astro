@@ -1,0 +1,87 @@
+---
+import DIC from "../jsons/DIC.json";
+---
+
+<section class="banner">
+  {
+    DIC.map((dic) => (
+      <article class="article">
+        <img src={`./images/${dic.img}`} alt="" class="img" />
+        <div class="div">
+          <h2 class="h2">{dic.title}</h2>
+          <p class="p">{dic.content}</p>
+        </div>
+      </article>
+    ))
+  }
+</section>
+
+<style>
+  section {
+    width: 100%;
+    background-image: url("./images/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+
+  article {
+    height: 100px;
+    display: flex;
+
+    .img {
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 300px;
+
+      .h2 {
+        margin: 0;
+      }
+
+      .p {
+        margin: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    section {
+      background-image: none;
+      height: auto;
+
+      .article {
+        margin: 80px 0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .img {
+          width: 100px;
+          height: 100px;
+        }
+
+        .div {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+
+          .p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+</style>

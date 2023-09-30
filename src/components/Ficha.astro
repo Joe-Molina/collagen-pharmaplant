@@ -1,0 +1,129 @@
+---
+import { Ficha } from "../jsons/info.js";
+---
+
+<article>
+  <div class="title-container">
+    <img src="./images/Collagen.png" alt="" class="clogo" />
+    <img src="./images/Hlogo.png" alt="" class="hlogo" />
+  </div>
+  <hr class="hr" />
+
+  <section class="ficha">
+    <img src="./images/pote.png" alt="" />
+    <div>
+      <p>
+        In the constant search for quality products, <b
+          >PHARMAPLANT offers you COLLAGEN HYDROLYZED MULTI WITH HYALURONIC ACID</b
+        >, BIOTIN AND VITAMIN C. A product that has been formulated with a
+        mixture of active ingredients that improve generalhealth, each of them
+        fulfilling specific bodily functions.
+      </p>
+      <hr />
+      <p>{Ficha.collagen}</p>
+      <hr />
+      <p><b>{Ficha.natural}</b></p>
+      <p>{Ficha.benefits}</p>
+    </div>
+  </section>
+</article>
+
+<style>
+  article {
+    text-align: justify;
+  }
+
+  .title-container {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-weight: 500;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  .clogo {
+    width: 40%;
+    height: 100px;
+    margin-right: 45px;
+  }
+
+  .hlogo {
+    width: 55%;
+    height: 98px;
+  }
+
+  article hr {
+    border-color: #1e3c8a;
+    color: #1e3c8a;
+  }
+
+  .ficha {
+    width: 100%;
+    display: flex;
+  }
+
+  .ficha img {
+    width: 50%;
+    transition: 0.3s;
+  }
+
+  .ficha img:hover {
+    transform: scale(1.1);
+  }
+
+  .ficha div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ficha div hr {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    article {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .title-container img {
+      width: 100%;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ficha img,
+    .ficha div {
+      width: 100%;
+    }
+
+    .ficha img {
+      margin: 20px 0 10px 0;
+      background-color: #1e3c8a;
+    }
+
+    .clogo {
+      width: 40%;
+      height: 80px;
+      margin-right: 45px;
+    }
+
+    .hlogo {
+      width: 55%;
+      height: 80px;
+    }
+
+    .hr {
+      width: 100%;
+    }
+  }
+</style>

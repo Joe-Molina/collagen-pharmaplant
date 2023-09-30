@@ -1,0 +1,41 @@
+<footer>
+  <img src="./images/logo.png" alt="" />
+  <p>® 2023. Phamaplant LLC</p>
+</footer>
+
+<style>
+  footer {
+    height: 150px;
+    background-color: #1e3c8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 200px;
+    position: absolute;
+    left: 20px;
+  }
+
+  p {
+    margin-top: 80px;
+    color: aliceblue;
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      position: relative;
+      margin-right: 40px;
+    }
+
+    p {
+      margin: 0 auto;
+    }
+  }
+</style>

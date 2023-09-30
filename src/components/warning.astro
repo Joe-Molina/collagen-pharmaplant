@@ -1,0 +1,61 @@
+<section class="warning">
+  <p class="statements">
+    These statements have not been evaluated by the Food and Drug Administration
+    (FDA). This product is not intended to diagnose, treat, cure or prevent any
+    disease.
+  </p>
+  <hr class="hr" />
+  <img src="./images/warning.png" alt="" class="img" />
+  <p class="warning-p">
+    Warning: Product to be consumed only by Adults. Consult a qualified
+    healthcare professional before using this product, especially if you are
+    pregnant, nursing, have any medical condition or are taking prescription
+    medications. If you notice any reaction or unfavorable effect, discontinue
+    immediately. Do not exceed the recommended dose. Store in a cool, dry and
+    safe place.
+  </p>
+</section>
+
+<style>
+  .warning {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    margin-top: 40px;
+    width: 10%;
+  }
+
+  .statements {
+    padding: 10px;
+    border: thin solid black;
+    margin-bottom: 40px;
+  }
+  .hr {
+    width: 100%;
+    border-color: #1e3c8a;
+  }
+
+  .statements,
+  .warning-p {
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .warning-p {
+    font-size: 12px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    .statements,
+    .warning-p {
+      width: 100%;
+    }
+  }
+</style>
