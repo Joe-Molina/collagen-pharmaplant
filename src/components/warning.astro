@@ -1,9 +1,16 @@
+---
+const icons = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+---
+
 <section class="warning">
   <p class="statements">
-    These statements have not been evaluated by the Food and Drug Administration
+    ▲These statements have not been evaluated by the Food and Drug Administration
     (FDA). This product is not intended to diagnose, treat, cure or prevent any
     disease.
   </p>
+  <div class="icons">
+    {icons.map((icon) => <img class="icon-img" src=`images/icons/${icon}.png` alt="" />)}
+  </div>
   <hr class="hr" />
   <img src="./images/warning.png" alt="" class="img" />
   <p class="warning-p">
@@ -17,6 +24,18 @@
 </section>
 
 <style>
+
+  .icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .icon-img{
+    height: 70px;
+  }
   .warning {
     margin-top: 60px;
     display: flex;
@@ -56,6 +75,12 @@
     .statements,
     .warning-p {
       width: 100%;
+    }
+
+    .icons{
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 400px;
     }
   }
 </style>
